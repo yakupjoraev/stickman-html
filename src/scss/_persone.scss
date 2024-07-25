@@ -1,0 +1,21 @@
+.persone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+
+  // .persone__picture
+
+  &__picture {
+    position: relative;
+    z-index: 1;
+  }
+
+  // .persone__layer
+
+  &__layer {
+    position: relative;
+    margin-top: -24px;
+
+  }
+}
