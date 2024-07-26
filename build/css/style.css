@@ -410,17 +410,8 @@ body.locked {
   margin-top: -24px;
 }
 
-.persone__layer::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: -10px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 312px;
-  height: 28px;
+.persone__sublayer {
+  margin-top: -24px;
 }
 
 .progress {
