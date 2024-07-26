@@ -2,20 +2,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   // .persone__picture
 
   &__picture {
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
 
   // .persone__layer
 
   &__layer {
     position: relative;
+    z-index: 1;
     margin-top: -24px;
 
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 312px;
+      height: 28px;
+      // background: radial-gradient(522.86% 46.57% at 50% 50.02%, rgb(81, 81, 81) 64.60000276565552%, rgb(81, 81, 81) 73.29999804496765%, rgb(81, 81, 81) 81.00000023841858%, rgb(255, 255, 255) 100%);
+      // opacity: 0.8;
+      // filter: blur(10px);
+
+      // background-image: url('../img/persone/layer-bg.png');
+      // background-repeat: no-repeat;
+      // background-size: auto;
+    }
   }
 }

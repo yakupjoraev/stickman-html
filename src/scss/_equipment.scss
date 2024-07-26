@@ -1,0 +1,151 @@
+.equipment {
+
+  // .equipment__back
+
+  &__back {
+    display: inline-flex;
+    margin-bottom: 12px;
+  }
+
+  // .equipment__btns
+
+  &__btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4px;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 8px;
+    border-radius: 100px;
+    background-color: #0e0a17;
+  }
+
+  // .equipment__btn
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 16px;
+    background-color: #1f172f;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+
+    &.active {
+      background: linear-gradient(15deg, #cc8c04 0%, #fbc34e 100%);
+      font-weight: 600;
+      color: #221712;
+    }
+  }
+
+  // .equipment__contents
+
+  &__contents {
+    border-radius: 16px;
+    background-color: #0e0a17;
+    margin-bottom: 8px;
+    max-height: calc(100vh - 384px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  // .equipment__content
+
+  &__content {
+    display: none;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #0e0a17;
+    animation: fade 0.2s linear;
+
+    &.active {
+      display: grid;
+    }
+  }
+
+  // .equipment__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+
+    @media (max-width: 359px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // .equipment__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+    padding: 8px 6px 12px;
+    border-radius: 12px;
+    background-color: #1f172f;
+  }
+
+  // .equipment__item-icon
+
+  &__item-icon {
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+  }
+
+  // .equipment__item-name
+
+  &__item-name {
+    margin-top: auto;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  // .equipment__item-descr
+
+  &__item-descr {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  // .equipment__item-count
+
+  &__item-count {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  // .equipment__item--disabled
+
+  &__item--disabled {
+
+    .equipment__item-descr,
+    .equipment__item-count,
+    .equipment__item-name {
+      color: #757575;
+    }
+  }
+}

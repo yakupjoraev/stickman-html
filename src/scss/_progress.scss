@@ -55,4 +55,31 @@
     border-radius: 50px;
     transition: 0.2s linear;
   }
+
+
+  // .progress__bottom
+
+  &__bottom {}
+
+
+  // .progress__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    width: 100%;
+  }
+
+  // .progress__item
+
+  &__item {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+  }
 }

@@ -1,11 +1,12 @@
 .wrapper {
   margin-top: 56px; // временно
+  margin-bottom: 84px; // временно
 
 
 
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - 140px);
   padding: 16px 20px;
   border-radius: 16px 16px 0 0;
   background-color: #141220;
@@ -52,4 +53,13 @@
   &:focus {
     transform: translateY(-2px);
   }
+
+  @media (min-width: 580px) {
+    background-position-y: center;
+  }
+}
+
+.back {
+  display: inline-flex;
+  margin-bottom: 12px;
 }
