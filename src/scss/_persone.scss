@@ -2,13 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 
   // .persone__picture
 
   &__picture {
     position: relative;
     z-index: 2;
+    user-select: none;
+    pointer-events: none;
+
+    img {
+      width: 220px;
+      height: auto;
+      margin: 0 auto;
+    }
   }
 
   // .persone__layer

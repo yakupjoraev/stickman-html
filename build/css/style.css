@@ -382,7 +382,23 @@ body.locked {
 }
 
 .character {
+  position: relative;
+  padding-top: 40px;
   margin-bottom: 20px;
+}
+
+.persone__circle {
+  position: absolute;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  --tiltX: 0deg;
+  --tiltY: 0deg;
+  -webkit-transform: rotateX(var(--tiltX)) rotateY(var(--tiltY));
+          transform: rotateX(var(--tiltX)) rotateY(var(--tiltY));
 }
 
 .persone {
@@ -396,12 +412,23 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .persone__picture {
   position: relative;
   z-index: 2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.persone__picture img {
+  width: 220px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .persone__layer {

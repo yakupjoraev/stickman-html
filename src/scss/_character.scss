@@ -1,4 +1,6 @@
 .character {
+  position: relative;
+  padding-top: 40px;
   margin-bottom: 20px;
 
   // .character__persone
@@ -12,4 +14,14 @@
   // .character__btn
 
   &__btn {}
+}
+
+.persone__circle {
+  position: absolute;
+  top: 0;
+  // left: 50%;
+  transition: transform 0.2s ease;
+  --tiltX: 0deg;
+  --tiltY: 0deg;
+  transform: rotateX(var(--tiltX)) rotateY(var(--tiltY));
 }
